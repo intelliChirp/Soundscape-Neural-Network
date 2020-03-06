@@ -1,3 +1,5 @@
 *.npy
 *.wav
-wandb/
+ant-cnn/wandb/
+bio-cnn/wandb/
+geo-cnn/wandb/
