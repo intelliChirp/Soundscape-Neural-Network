@@ -1,0 +1,28 @@
+{
+    "root": "C:/Users/heyjo/Documents/School/Capstone/intellichirp-snaw-NN",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/intelliChirp/Soundscape-Neural-Network.git",
+        "commit": "a2a7fc5ba408840ad750ec5b2ba84bc58eb49fb7"
+    },
+    "email": "heyjoshkruse@gmail.com",
+    "startedAt": "2020-03-06T20:03:11.822318",
+    "host": "LAPTOP-568AR9Q4",
+    "username": "heyjo",
+    "executable": "C:\\ProgramData\\Anaconda3\\python.exe",
+    "os": "Windows-10-10.0.18362-SP0",
+    "python": "3.7.4",
+    "gpu": "GeForce GTX 960M",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "args": [
+        "-f",
+        "C:\\Users\\heyjo\\AppData\\Roaming\\jupyter\\runtime\\kernel-0bb47b3f-b6e0-4e95-98aa-34c3bf1a8ce3.json"
+    ],
+    "state": "running",
+    "jobType": null,
+    "mode": "run",
+    "name": "fresh-galaxy-4",
+    "project": "intellichirp-snaw-NN",
+    "heartbeatAt": "2020-03-06T20:03:14.384896"
+}
