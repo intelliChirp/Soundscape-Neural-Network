@@ -18,7 +18,7 @@ def get_labels(path=DATA_PATH):
 
 # convert file to wav2mfcc
 # Mel-frequency cepstral coefficients
-def wav2mfcc(file_path, n_mfcc=30, max_len=11):
+def wav2mfcc(file_path, n_mfcc=20, max_len=11):
     wave, sr = librosa.load(file_path, mono=True, sr=None)
     wave = np.asfortranarray(wave[::3])
     mfcc = librosa.feature.mfcc(wave, sr=16000, n_mfcc=n_mfcc)
@@ -65,9 +65,10 @@ def get_train_test(split_ratio=0.6, random_state=42):
 
     assert X.shape[0] == len(y)
 
-    return train_test_split(X, y, test_size= (1 - split_ratio), random_state=random_state, shuffle=True)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size= (1 - 0.8), random_state=random_state, shuffle=True)
+    X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size= (1 - split_ratio), random_state=random_state, shuffle=True)
 
-
+    return X_train, X_test, X_val, y_train, y_test, y_val
 
 def prepare_dataset(path=DATA_PATH):
     labels, _, _ = get_labels(path)

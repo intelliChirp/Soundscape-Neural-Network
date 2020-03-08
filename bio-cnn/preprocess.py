@@ -65,9 +65,10 @@ def get_train_test(split_ratio=0.6, random_state=42):
 
     assert X.shape[0] == len(y)
 
-    return train_test_split(X, y, test_size= (1 - split_ratio), random_state=random_state, shuffle=True)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size= (1 - 0.8), random_state=random_state, shuffle=True)
+    X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size= (1 - split_ratio), random_state=random_state, shuffle=True)
 
-
+    return X_train, X_test, X_val, y_train, y_test, y_val
 
 def prepare_dataset(path=DATA_PATH):
     labels, _, _ = get_labels(path)
