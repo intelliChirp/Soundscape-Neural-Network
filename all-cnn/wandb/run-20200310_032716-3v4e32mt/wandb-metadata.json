@@ -1,0 +1,28 @@
+{
+    "root": "C:/Users/heyjo/Documents/School/Capstone/intellichirp-snaw-NN",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/intelliChirp/Soundscape-Neural-Network.git",
+        "commit": "0b300690cf1ce3006ba6a0d7b3023b97209d03b8"
+    },
+    "email": "heyjoshkruse@gmail.com",
+    "startedAt": "2020-03-10T03:27:16.187808",
+    "host": "LAPTOP-568AR9Q4",
+    "username": "heyjo",
+    "executable": "C:\\ProgramData\\Anaconda3\\python.exe",
+    "os": "Windows-10-10.0.18362-SP0",
+    "python": "3.7.4",
+    "gpu": "GeForce GTX 960M",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "args": [
+        "-f",
+        "C:\\Users\\heyjo\\AppData\\Roaming\\jupyter\\runtime\\kernel-7317ab4a-23e2-4873-a1f0-32722095443a.json"
+    ],
+    "state": "running",
+    "jobType": null,
+    "mode": "run",
+    "name": "glowing-flower-92",
+    "project": "intellichirp-snaw-NN",
+    "heartbeatAt": "2020-03-10T03:56:33.097185"
+}

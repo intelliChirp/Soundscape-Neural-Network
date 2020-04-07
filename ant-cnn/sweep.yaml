@@ -1,0 +1,51 @@
+method: random
+metric:
+  goal: minimize
+  name: val_loss
+parameters:
+  batch_size:
+    distribution: int_uniform
+    max: 200
+    min: 50
+  buckets:
+    distribution: int_uniform
+    max: 128
+    min: 6
+  epochs:
+    distribution: int_uniform
+    max: 20
+    min: 1
+  max_len:
+    distribution: int_uniform
+    max: 32
+    min: 6
+  layer_one:
+    distribution: int_uniform
+    max: 128
+    min: 1
+  layer_two:
+    distribution: int_uniform
+    max: 128
+    min: 1
+  layer_three:
+    distribution: int_uniform
+    max: 128
+    min: 1
+  layer_four:
+    distribution: int_uniform
+    max: 128
+    min: 1
+  dropout_one:
+    distribution: uniform
+    max: .9
+    min: .1
+  dropout_two:
+    distribution: uniform
+    max: .9
+    min: .1
+  sampler:
+    values: ['under', 'over', 'smote', 'none']
+early_terminate:
+  type: hyperband
+  min_iter: 3
+program: train.py
